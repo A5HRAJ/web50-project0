@@ -1,0 +1,40 @@
+$max_logo_width: 700px;
+
+#logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: $max_logo_width;
+}
+@media (max-width: $max_logo_width) {
+	#logo {
+		width: 100%;
+	}
+}
+nav {
+	margin-bottom: 30px;
+}
+.heading {
+	text-decoration: underline;
+	h3 {
+		font-weight: bold;
+	}
+	.time {
+		font-style: italic;
+	}
+}
+footer {
+	margin-top: 30px;
+	text-align: center;
+}
+%pastor {
+	font-weight: bold;
+}
+#pastor_josh {
+	@extend %pastor;
+	color: blue;
+}
+#pastor_lee {
+	@extend %pastor;
+	color: green;
+}
